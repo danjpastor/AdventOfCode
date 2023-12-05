@@ -24,9 +24,5 @@ with open('input.txt', 'r') as codes_txt:
     for code in codes:
         numbers.append(int(clean_code(code)))
 
-    result = 0
-    for number in numbers:
-        result += number
-
-    print(result)
+    print(sum(numbers))
 
